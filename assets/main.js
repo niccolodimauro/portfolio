@@ -8,6 +8,7 @@ const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matc
 const roles = {
   en: ["AI Solution Designer", "Copilot agent builder", "PwC GenAI Champion", "Business analyst · BPMN", "Microsoft 365 consultant"],
   it: ["AI Solution Designer", "Creatore di agenti Copilot", "GenAI Champion in PwC", "Business analyst · BPMN", "Consulente Microsoft 365"],
+  fr: ["AI Solution Designer", "Créateur d'agents Copilot", "GenAI Champion chez PwC", "Business analyst · BPMN", "Consultant Microsoft 365"],
 };
 const meta = {
   en: {
@@ -23,6 +24,13 @@ const meta = {
       "Portfolio di Niccolò Di Mauro, Senior Financial Services Transformation Associate in PwC Luxembourg: AI agentica sullo stack Microsoft, adozione di Copilot, modellazione BPMN e programmi Microsoft 365.",
     openMenu: "Apri il menu",
     closeMenu: "Chiudi il menu",
+  },
+  fr: {
+    title: "Niccolò Di Mauro — IA agentique et Microsoft Copilot pour les Financial Services",
+    description:
+      "Portfolio de Niccolò Di Mauro, Senior Financial Services Transformation Associate chez PwC Luxembourg : IA agentique sur la stack Microsoft, adoption de Copilot, modélisation BPMN et programmes Microsoft 365.",
+    openMenu: "Ouvrir le menu",
+    closeMenu: "Fermer le menu",
   },
 };
 
@@ -168,6 +176,150 @@ const it = {
   "footer.top": "torna su ↑",
 };
 
+const fr = {
+  skip: "Aller au contenu",
+  toTop: "Retour en haut",
+  navLabel: "Navigation principale",
+  "nav.about": "À propos",
+  "nav.skills": "Compétences",
+  "nav.projects": "Projets",
+  "nav.journey": "Parcours",
+  "nav.certs": "Certifications",
+  "nav.contact": "Contact",
+
+  "hero.status": 'Luxembourg · PwC<span class="hide-sm"> · ouvert aux projets IA</span>',
+  "hero.roles": "AI Solution Designer, créateur d'agents Copilot, GenAI Champion chez PwC et business analyst.",
+  "hero.lead":
+    "Senior Associate en Financial Services Transformation chez PwC Luxembourg. Je conçois et je livre des solutions d'IA agentique sur la stack Microsoft, de l'analyse des processus et de la modélisation BPMN jusqu'au développement, aux tests et à l'adoption.",
+  "hero.ctaProjects": "Voir les projets",
+  "hero.ctaContact": "Me contacter",
+  "hero.photoAlt": "Portrait de Niccolò Di Mauro",
+  "hero.scrollLabel": "Défiler vers la section À propos",
+
+  "about.index": "01 / à propos",
+  "about.title": "À propos",
+  "about.big":
+    'Je transforme les processus métier en <span class="hl">agents IA</span> que les équipes utilisent vraiment, et j\'apprends aux autres à les construire.',
+  "about.p1":
+    "Je travaille dans l'équipe Modern Workplace and Microsoft de PwC Luxembourg, où je conçois des solutions agentiques avec Copilot Studio, Copilot Cowork, Power Automate et SharePoint. Je pars toujours du processus : je le modélise en BPMN, j'identifie où un agent apporte de la valeur, je le construis, je le teste avec les utilisateurs et j'accompagne son adoption.",
+  "about.p2":
+    "J'ai mené des programmes Microsoft 365 et Copilot dans la banque, la fiscalité, l'assurance et le secteur public : du PMO et des target operating models aux ateliers d'attribution des licences et aux cadres de gouvernance.",
+  "about.p3":
+    "GenAI Champion chez PwC depuis 2024 et formateur principal d'un programme de montée en compétences Copilot pour environ 400 consultants. Je travaille en italien, en anglais et en français.",
+  "about.statsLabel": "Quelques chiffres",
+  "about.stat1": "consultants dans le programme de formation Copilot",
+  "about.stat2": "ateliers d'attribution des licences Copilot avec les métiers",
+  "about.stat3": "GenAI Champion chez PwC depuis",
+  "about.stat4": "langues de travail : italien, anglais, français",
+
+  "skills.index": "02 / compétences",
+  "skills.title": "Compétences",
+  "skills.lead": "Là où se rencontrent l'IA, les processus et les financial services.",
+  "skills.ai.title": "IA agentique sur la stack Microsoft",
+  "skills.ai.text":
+    "Des solutions à un ou plusieurs agents qui lisent e-mails, documents et factures, proposent des actions et laissent la validation finale à une personne, avec chaque modification tracée. De l'atelier de conception à la solution opérationnelle.",
+  "skills.adoption.title": "Adoption et formation IA",
+  "skills.adoption.text":
+    "GenAI Champion : formations, sessions individuelles avec la direction et un parcours qui fait passer les consultants d'utilisateurs de Copilot à créateurs d'agents.",
+  "skills.adoption.tags": "<li>Conception de parcours</li><li>Conduite du changement</li><li>Réseau de champions</li>",
+  "skills.bpmn.title": "Modélisation des processus",
+  "skills.bpmn.text": "Modèles AS-IS et TO-BE en BPMN, y compris en direct pendant les ateliers : le point de départ de toute automatisation.",
+  "skills.m365.title": "Programmes et gouvernance Microsoft 365",
+  "skills.m365.text":
+    "PMO sur dix-neuf chantiers, Target Operating Model, stratégie de migration et nettoyage des contenus, analyse des écarts d'adoption, KPI DLP, parcours utilisateurs de collaboration et cadres de gouvernance et de service management M365.",
+  "skills.fs.title": "Financial services et réglementation",
+  "skills.fs.text":
+    "Clients dans la banque, la fiscalité, l'assurance et le secteur public. Expérience concrète de la remédiation AML et Know Your Transaction, de cas d'usage NLP pour le KYC, la due diligence et l'analyse de contrats, et d'évaluations de conformité RGPD et DORA.",
+  "skills.ba.title": "Business analysis",
+  "skills.ba.text": "Exigences, user stories, spécifications, recette (UAT) avec guides et suivi des retours, rapports de sélection de fournisseurs.",
+  "skills.lang.title": "Langues",
+  "skills.lang.text": "Italien langue maternelle, anglais C1–C2 et français C1 : j'anime des ateliers et je mène des projets dans les trois langues.",
+  "skills.bd.title": "Développement commercial",
+  "skills.bd.text":
+    "Expertise IA, cas d'usage et analyses de faisabilité pour des propositions en asset management, énergie et secteur public. Deuxième place au tournoi d'innovation interne avec un concept bancaire de suivi des prêts et du risque macroéconomique.",
+  "skills.bd.tags": "<li>Propositions</li><li>Cas d'usage</li><li>Innovation</li>",
+
+  "projects.index": "03 / projets",
+  "projects.title": "Projets",
+  "projects.lead": "Une sélection des solutions IA que j'ai conçues et construites.",
+  "projects.p1.meta": "2026 · conseil fiscal",
+  "projects.p1.title": "Investment Tax Credit, multi-agents",
+  "projects.p1.kicker": "AI Solution Designer · processus de bout en bout",
+  "projects.p1.text":
+    "Une solution multi-agents qui couvre tout le processus de l'Investment Tax Credit, des dossiers d'éligibilité aux contrôles de conformité et des factures. J'ai rédigé la logique de tri et de contrôle des factures, modélisé le processus en BPMN en 15 phases et validé la solution sur un cas réel avec extraction OCR, rapprochement et un flux de contrôle pour les pièces manquantes.",
+  "projects.p2.meta": "interne · vitrine client",
+  "projects.p2.title": "Cockpit IA de gestion de projet",
+  "projects.p2.kicker": "Human in the loop · tracé",
+  "projects.p2.text":
+    "Tient à jour les plannings, les RAID logs et les matrices RACI à partir des e-mails et des conversations Teams. Un agent IA propose les mises à jour, le chef de projet les valide dans une application Copilot Studio et chaque modification est tracée. Une version antérieure a servi de vitrine dans une proposition client.",
+  "projects.p3.meta": "déployé dans Teams",
+  "projects.p3.title": "Agent de modélisation des processus",
+  "projects.p3.kicker": "De la documentation au BPMN",
+  "projects.p3.text":
+    "Transforme la documentation de processus en modèles BPMN interactifs, directement dans Microsoft Teams. Il fait partie d'une famille d'agents métier que j'ai créés, avec un coach de négociation et un agent de veille qui sélectionne et diffuse l'actualité technologique.",
+  "projects.p3.tag": "Agents métier",
+  "projects.p4.meta": "oct. 2026 · ~400 consultants",
+  "projects.p4.title": "From Copilot User to Agent Builder",
+  "projects.p4.kicker": "Formateur principal · programme de formation",
+  "projects.p4.text":
+    "J'ai co-conçu le parcours, la structure par clusters et le plan de déploiement du programme de formation Copilot du cabinet, et j'anime le cours avec un exercice pratique de création d'agent que j'ai conçu sur un vrai cas d'appel d'offres public. J'accompagne aussi les nouveaux formateurs, et j'ai été nommé formateur Copilot Cowork pour 2027.",
+  "projects.p4.tags": "<li>Formation</li><li>Création d'agents</li><li>Copilot Cowork</li>",
+
+  "journey.index": "04 / parcours",
+  "journey.title": "Parcours",
+  "journey.lead": "Les étapes qui m'ont mené jusqu'ici, et la prochaine.",
+  "journey.t1.title": "Bachelor en Business and Management · SAA, Turin",
+  "journey.t1.text": "Un cursus en anglais à la SAA School of Management : les bases business de tout ce qui a suivi.",
+  "journey.t2.title": "Master en Digital Transformation and Entrepreneurship · H-FARM",
+  "journey.t2.text":
+    "University of Chichester au H-FARM College, diplômé avec un GPA de 4.0 et la mention Distinction. Lauréat de la bourse HforHuman pour un projet sur la transformation numérique du secteur agricole, avec des systèmes d'aide à la décision pour la qualité des produits, les volumes de production et les pratiques durables.",
+  "journey.t3.date": "Mai – sept. 2023",
+  "journey.t3.title": "Business Analyst · JAKALA, Milan",
+  "journey.t3.text":
+    "Conseil IT sur SAS Marketing Automation pour des clients retail et industriels : cartographie des données AS-IS, refonte TO-BE avec privacy by design, business blueprint et points d'avancement en SteerCo.",
+  "journey.t4.date": "Oct. 2023",
+  "journey.t4.title": "PwC Luxembourg · Technology Consulting Trainee",
+  "journey.t4.text":
+    "Premières missions sur Microsoft 365 et les processus pour des clients de l'assurance, du secteur public et de la sidérurgie : modèles BPMN, user stories, recette et cadres de gouvernance.",
+  "journey.t5.date": "Mai 2024",
+  "journey.t5.title": "Associate · GenAI Champion",
+  "journey.t5.text":
+    "Financial Services Transformation Associate. PMO sur le programme Microsoft 365 d'une banque avec dix-neuf chantiers, et début de mon rôle dans la diffusion de l'IA générative dans tout le cabinet.",
+  "journey.t6.date": "Oct. 2025",
+  "journey.t6.title": "AI Business Analyst · Secteur public",
+  "journey.t6.text":
+    "Workflows Copilot et Power Platform pour la gestion des appels d'offres : automatisation des e-mails, rédaction de documents, analyse des exigences et orchestration des tâches.",
+  "journey.t7.date": "2026",
+  "journey.t7.title": "Senior Associate · AI Solution Designer",
+  "journey.t7.text":
+    "Promu en juillet. Solution multi-agents pour l'Investment Tax Credit, déploiement de Microsoft 365 Copilot dans une banque avec environ 19 ateliers, un Public Sector Hackathon de deux jours et formateur principal du cours Copilot.",
+  "journey.t8.title": "Formateur Copilot Cowork",
+  "journey.t8.text":
+    "Nommé formateur Copilot Cowork, pour diffuser des compétences IA réutilisables auprès des collègues de toute la practice de conseil.",
+  "journey.soon": "à venir",
+
+  "certs.index": "05 / certifications",
+  "certs.title": "Certifications",
+  "certs.lead": "Formation continue, de la stratégie IA au service management.",
+  "certs.langsLabel": "Langues",
+  "certs.native": "langue maternelle",
+
+  "vision.index": "06 / vision",
+  "vision.quote":
+    'Les agents IA devraient être des <span class="accent-text">collègues</span>, pas des outils : construits sur des processus réels, gouvernés et adoptés.',
+  "vision.note":
+    "La technologie est la partie facile. Ce qui fait fonctionner l'IA dans les financial services, c'est comprendre le processus, laisser le contrôle aux personnes et aider les équipes à changer leur façon de travailler.",
+
+  "contact.index": "07 / contact",
+  "contact.title": 'Construisons<br />ton prochain <span class="accent-text">agent</span>.',
+  "contact.lead": "Projets, collaborations ou simplement un échange sur l'IA, Copilot et les financial services : écris-moi.",
+
+  "footer.place": "Luxembourg · Italie",
+  "footer.top": "retour en haut ↑",
+};
+
+const dict = { it, fr };
+
 /* ---------- i18n ---------- */
 const original = {
   html: new Map($$("[data-i18n]").map((el) => [el, el.innerHTML])),
@@ -178,9 +330,10 @@ const LANG_KEY = "lang";
 function initialLang() {
   try {
     const saved = localStorage.getItem(LANG_KEY);
-    if (saved === "en" || saved === "it") return saved;
+    if (saved in dict || saved === "en") return saved;
   } catch {}
-  return (navigator.language || "en").toLowerCase().startsWith("it") ? "it" : "en";
+  const nav = (navigator.language || "en").toLowerCase().slice(0, 2);
+  return nav in dict ? nav : "en";
 }
 let lang = initialLang();
 let typedRun = 0;
@@ -188,7 +341,7 @@ let typedRun = 0;
 function applyLang(next) {
   lang = next;
   root.lang = next;
-  const pick = (key, fallback) => (next === "it" ? it[key] ?? fallback : fallback);
+  const pick = (key, fallback) => dict[next]?.[key] ?? fallback;
   for (const [el, html] of original.html) {
     const value = pick(el.dataset.i18n, html);
     if (el.hasAttribute("data-scramble")) {
