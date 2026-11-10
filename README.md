@@ -17,3 +17,8 @@ python3 -m http.server 8080
 ## Deploy on Vercel
 
 Import the repository in Vercel, framework preset "Other", no build command, output directory `.`.
+
+## Offline version
+
+`niccolo-di-mauro-portfolio.html` is a single self-contained file (styles, script, fonts and photo embedded).
+Open it directly in a browser: no server or internet connection needed. Regenerate it after editing the source files.
