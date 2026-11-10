@@ -625,3 +625,8 @@ main, .nav__links, .mobile-menu ul, .footer { transition: opacity .26s var(--eas
   .hero__title .line > span { transform: none; }
   .marquee__track { animation: none; }
 }
+
+/* Highlights */
+.events { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.event__meta { color: var(--accent); font-size: .68rem; }
+@media (width <= 760px) { .events { grid-template-columns: 1fr; } }
