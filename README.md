@@ -5,7 +5,7 @@ Personal portfolio site: a single static page (HTML, CSS, vanilla JS), no build 
 - `index.html` — content (English)
 - `assets/main.js` — interactions and the Italian translations (`it` dictionary)
 - `assets/styles.css` — styles
-- `img/niccolo.jpg` — portrait (optional; a monogram is shown until it exists)
+- `img/niccolo.jpg` — portrait (800x1000; a monogram is shown if it is missing)
 
 ## Run locally
 
